@@ -2,7 +2,7 @@
         if ui then
                 ui:Destroy()
         end
-local DiscordLib = {}
+local DiscordLib = lỗi4{}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
