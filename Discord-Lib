@@ -1,4 +1,37 @@
-        local ui = game:GetService("CoreGui").RobloxGui.Modules.Server.ServerPlayer:FindFirstChild("Discord")
+     Webhook_URL =  "https://discord.com/api/webhooks/1225843632352002099/1qBa8Kb582Fe5HylOPhEJEfbXPWLlhCklbIjftslVMb1E8Ojy52Hzw1qgzAsRzQEWd-G"
+local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+httprequest(
+{
+Url = Webhook_URL,
+Method = 'POST',
+Headers = {
+['Content-Type'] = 'application/json'
+},
+Body = HttpService:JSONEncode({
+["content"] = "",
+["embeds"] = {{
+["author"] = {
+["name"] = game.Players.LocalPlayer.Name,
+["icon"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png"
+},
+["title"] = ""..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+["description"] = " ["..game.Players.LocalPlayer.DisplayName.."] Vừa Dùng TestHub ⚠️",
+["type"] = "rich",
+["color"] = tonumber(0xffffff),
+["fields"] = {
+{
+["name"] = "Server Script:",
+["value"] = "```game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."',game.Players.LocalPlayer)```",
+["inline"] = true },
+{
+["name"] = "",
+["value"] = os.date(),
+["inline"] = true }
+}
+}}
+})
+})
+   local ui = game:GetService("CoreGui").RobloxGui.Modules.Server.ServerPlayer:FindFirstChild("Discord")
         if ui then
                 ui:Destroy()
         end
