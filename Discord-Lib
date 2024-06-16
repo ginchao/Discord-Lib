@@ -76,7 +76,7 @@ local function MakeDraggable(topbarobject, object)
 			end
 		end
 	)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Function-FindFirstChild-Plr/main/blacklist"))()
+
 	UserInputService.InputChanged:Connect(
 		function(input)
 			if input == DragInput and Dragging then
