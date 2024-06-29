@@ -1819,6 +1819,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelTitleFrame.BorderSizePixel = 0
 		ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
 		ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
+               ChannelTitleFrame.BackgroundTransparency = 10.000
 
 		Hashtag.Name = "Hashtag"
 		Hashtag.Parent = ChannelTitleFrame
