@@ -203,6 +203,7 @@ function DiscordLib:Window(text)
 	Userpad.Name = "Userpad"
 	Userpad.Parent = TopFrameHolder
 	Userpad.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
+       Userpad.BackgroundTransparency = 1.000
 	Userpad.BorderSizePixel = 0
 	Userpad.Position = UDim2.new(0.106243297, 0, 15.9807148, 0)
 	Userpad.Size = UDim2.new(0, 179, 0, 43)
@@ -210,6 +211,7 @@ function DiscordLib:Window(text)
 	UserIcon.Name = "UserIcon"
 	UserIcon.Parent = Userpad
 	UserIcon.BackgroundColor3 = Color3.fromRGB(31, 33, 36)
+       UserIcon.BackgroundTransparency = 1.000
 	UserIcon.BorderSizePixel = 0
 	UserIcon.Position = UDim2.new(0.0340000018, 0, 0.123999998, 0)
 	UserIcon.Size = UDim2.new(0, 32, 0, 32)
@@ -2148,7 +2150,7 @@ ChannelContentFrame.BackgroundTransparency = 3.000 --đây
 
 				Button.Name = "Button"
 				Button.Parent = ChannelHolder
-				Button.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
+				Button.BackgroundColor3 = Color3.fromRGB(255, 255, 100)
                                Button.BackgroundTransparency = 0.2
 				Button.Size = UDim2.new(0, 401, 0, 30)
 				Button.AutoButtonColor = false
@@ -2200,7 +2202,7 @@ ChannelContentFrame.BackgroundTransparency = 3.000 --đây
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = ChannelHolder
-				Toggle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 100)
                                Toggle.BackgroundTransparency = 0.2
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
