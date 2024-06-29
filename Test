@@ -1845,13 +1845,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelTitle.TextSize = 15.000
 		ChannelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-		ChannelContentFrame.Name = "ChannelContentFrame"
-		ChannelContentFrame.Parent = ServerFrame
-		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		ChannelContentFrame.BorderSizePixel = 0
-		ChannelContentFrame.ClipsDescendants = true
-		ChannelContentFrame.Position = UDim2.new(0.294561088, 0, 0.106338218, 0)
-		ChannelContentFrame.Size = UDim2.new(0, 429, 0, 333)
+		--channelcontent
 
 		GlowChannel.Name = "GlowChannel"
 		GlowChannel.Parent = ChannelContentFrame
