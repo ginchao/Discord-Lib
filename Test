@@ -1734,6 +1734,16 @@ function DiscordLib:Window(text)
 		ServerFrame.Position = UDim2.new(0.105726875, 0, 1.01262593, 0)
 		ServerFrame.Size = UDim2.new(0, 609, 0, 373)
 		ServerFrame.Visible = false
+                local Discord = Instance.new("ScreenGui")
+
+
+local ImageLabel = Instance.new("ImageLabel")
+ImageLabel.Name = "MyImage"
+ImageLabel.Parent = ServerFrame
+ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
+ImageLabel.BackgroundTransparency = 1 
+ImageLabel.Image = "rbxassetid://6409799523" 
+
 
 		ServerFrame1.Name = "ServerFrame1"
 		ServerFrame1.Parent = ServerFrame
