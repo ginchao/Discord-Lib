@@ -143,8 +143,8 @@ function DiscordLib:Window(text)
 
 	Title.Name = "Title"
 	Title.Parent = TopFrame
-	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Title.BackgroundTransparency = 1.000
+	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 10)
+	Title.BackgroundTransparency = 0.2
 	Title.Position = UDim2.new(0.0102790017, 0, 0, 0)
 	Title.Size = UDim2.new(0, 192, 0, 23)
 	Title.Font = Enum.Font.Gotham
@@ -155,8 +155,8 @@ function DiscordLib:Window(text)
 
 	CloseBtn.Name = "CloseBtn"
 	CloseBtn.Parent = TopFrame
-	CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
-	CloseBtn.BackgroundTransparency = 0
+	CloseBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 10)
+	CloseBtn.BackgroundTransparency = 0.2
 	CloseBtn.Position = UDim2.new(0.959063113, 0, -0.0169996787, 0)
 	CloseBtn.Size = UDim2.new(0, 28, 0, 22)
 	CloseBtn.Font = Enum.Font.Gotham
@@ -177,8 +177,8 @@ function DiscordLib:Window(text)
 
 	MinimizeBtn.Name = "MinimizeButton"
 	MinimizeBtn.Parent = TopFrame
-	MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
-	MinimizeBtn.BackgroundTransparency = 0
+	MinimizeBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 10)
+	MinimizeBtn.BackgroundTransparency = 0.2
 	MinimizeBtn.Position = UDim2.new(0.917947114, 0, -0.0169996787, 0)
 	MinimizeBtn.Size = UDim2.new(0, 28, 0, 22)
 	MinimizeBtn.Font = Enum.Font.Gotham
@@ -1772,7 +1772,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ServerTitle.Name = "ServerTitle"
 		ServerTitle.Parent = ServerTitleFrame
 		ServerTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		ServerTitle.BackgroundTransparency = 2.000
+		ServerTitle.BackgroundTransparency = 0.10
 		ServerTitle.BorderSizePixel = 0
 		ServerTitle.Position = UDim2.new(0.0751359761, 0, 0, 0)
 		ServerTitle.Size = UDim2.new(0, 97, 0, 39)
@@ -1821,7 +1821,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelTitleFrame.BorderSizePixel = 0
 		ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
 		ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
-               ChannelTitleFrame.BackgroundTransparency = 2.000
+               ChannelTitleFrame.BackgroundTransparency = 0.10
 
 		Hashtag.Name = "Hashtag"
 		Hashtag.Parent = ChannelTitleFrame
@@ -1838,7 +1838,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelTitle.Name = "ChannelTitle"
 		ChannelTitle.Parent = ChannelTitleFrame
 		ChannelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		ChannelTitle.BackgroundTransparency = 2.000
+		ChannelTitle.BackgroundTransparency = 0.10
 		ChannelTitle.BorderSizePixel = 0
 		ChannelTitle.Position = UDim2.new(0.0862470865, 0, 0, 0)
 		ChannelTitle.Size = UDim2.new(0, 95, 0, 39)
