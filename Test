@@ -14,6 +14,7 @@ local pfp
 local user
 local tag
 local userinfo = {}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Hoclomcongthuc/main/vohai"))()
 pcall(function()
 	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
 end)
@@ -119,7 +120,7 @@ function DiscordLib:Window(text)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Discord
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.ClipsDescendants = true
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -127,7 +128,7 @@ function DiscordLib:Window(text)
 
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
-	TopFrame.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+	TopFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	TopFrame.BackgroundTransparency = 1.000
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -135,7 +136,7 @@ function DiscordLib:Window(text)
 	
 	TopFrameHolder.Name = "TopFrameHolder"
 	TopFrameHolder.Parent = TopFrame
-	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	TopFrameHolder.BackgroundTransparency = 1.000
 	TopFrameHolder.BorderSizePixel = 0
 	TopFrameHolder.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -143,20 +144,20 @@ function DiscordLib:Window(text)
 
 	Title.Name = "Title"
 	Title.Parent = TopFrame
-	Title.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
-	Title.BackgroundTransparency = 0.2
+	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title.BackgroundTransparency = 1.000
 	Title.Position = UDim2.new(0.0102790017, 0, 0, 0)
 	Title.Size = UDim2.new(0, 192, 0, 23)
 	Title.Font = Enum.Font.Gotham
 	Title.Text = text
-	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title.TextColor3 = Color3.fromRGB(99, 102, 109)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
 	CloseBtn.Name = "CloseBtn"
 	CloseBtn.Parent = TopFrame
-	CloseBtn.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
-	CloseBtn.BackgroundTransparency = 1
+	CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+	CloseBtn.BackgroundTransparency = 0
 	CloseBtn.Position = UDim2.new(0.959063113, 0, -0.0169996787, 0)
 	CloseBtn.Size = UDim2.new(0, 28, 0, 22)
 	CloseBtn.Font = Enum.Font.Gotham
@@ -168,17 +169,17 @@ function DiscordLib:Window(text)
 
 	CloseIcon.Name = "CloseIcon"
 	CloseIcon.Parent = CloseBtn
-	CloseIcon.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
-	CloseIcon.BackgroundTransparency = 1
+	CloseIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	CloseIcon.BackgroundTransparency = 1.000
 	CloseIcon.Position = UDim2.new(0.189182192, 0, 0.128935531, 0)
 	CloseIcon.Size = UDim2.new(0, 17, 0, 17)
 	CloseIcon.Image = "http://www.roblox.com/asset/?id=6035047409"
-	CloseIcon.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	CloseIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
 
 	MinimizeBtn.Name = "MinimizeButton"
 	MinimizeBtn.Parent = TopFrame
-	MinimizeBtn.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
-	MinimizeBtn.BackgroundTransparency = 1
+	MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+	MinimizeBtn.BackgroundTransparency = 0
 	MinimizeBtn.Position = UDim2.new(0.917947114, 0, -0.0169996787, 0)
 	MinimizeBtn.Size = UDim2.new(0, 28, 0, 22)
 	MinimizeBtn.Font = Enum.Font.Gotham
@@ -190,12 +191,12 @@ function DiscordLib:Window(text)
 
 	MinimizeIcon.Name = "MinimizeLabel"
 	MinimizeIcon.Parent = MinimizeBtn
-	MinimizeIcon.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+	MinimizeIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MinimizeIcon.BackgroundTransparency = 1.000
 	MinimizeIcon.Position = UDim2.new(0.189182192, 0, 0.128935531, 0)
 	MinimizeIcon.Size = UDim2.new(0, 17, 0, 17)
 	MinimizeIcon.Image = "http://www.roblox.com/asset/?id=6035067836"
-	MinimizeIcon.ImageColor3 = Color3.fromRGB(255, 255, 255)
+	MinimizeIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
 
 	ServersHolder.Name = "ServersHolder"
 	ServersHolder.Parent = TopFrameHolder
@@ -203,7 +204,6 @@ function DiscordLib:Window(text)
 	Userpad.Name = "Userpad"
 	Userpad.Parent = TopFrameHolder
 	Userpad.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
-       Userpad.BackgroundTransparency = 0.2
 	Userpad.BorderSizePixel = 0
 	Userpad.Position = UDim2.new(0.106243297, 0, 15.9807148, 0)
 	Userpad.Size = UDim2.new(0, 179, 0, 43)
@@ -211,7 +211,6 @@ function DiscordLib:Window(text)
 	UserIcon.Name = "UserIcon"
 	UserIcon.Parent = Userpad
 	UserIcon.BackgroundColor3 = Color3.fromRGB(31, 33, 36)
-       UserIcon.BackgroundTransparency = 0.2
 	UserIcon.BorderSizePixel = 0
 	UserIcon.Position = UDim2.new(0.0340000018, 0, 0.123999998, 0)
 	UserIcon.Size = UDim2.new(0, 32, 0, 32)
@@ -1736,15 +1735,6 @@ function DiscordLib:Window(text)
 		ServerFrame.Position = UDim2.new(0.105726875, 0, 1.01262593, 0)
 		ServerFrame.Size = UDim2.new(0, 609, 0, 373)
 		ServerFrame.Visible = false
-                
-
-local ImageLabel = Instance.new("ImageLabel")
-ImageLabel.Name = "MyImage"
-ImageLabel.Parent = ServerFrame
-ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
-ImageLabel.BackgroundTransparency = 1 
-ImageLabel.Image = "rbxassetid://6409799523" 
-
 
 		ServerFrame1.Name = "ServerFrame1"
 		ServerFrame1.Parent = ServerFrame
@@ -1763,15 +1753,15 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ServerTitleFrame.Name = "ServerTitleFrame"
 		ServerTitleFrame.Parent = ServerFrame
 		ServerTitleFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		ServerTitleFrame.BackgroundTransparency = 0.20 --đây
+		ServerTitleFrame.BackgroundTransparency = 1.000
 		ServerTitleFrame.BorderSizePixel = 0
 		ServerTitleFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
 		ServerTitleFrame.Size = UDim2.new(0, 180, 0, 40)
 
 		ServerTitle.Name = "ServerTitle"
 		ServerTitle.Parent = ServerTitleFrame
-		ServerTitle.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		ServerTitle.BackgroundTransparency = 0.5
+		ServerTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ServerTitle.BackgroundTransparency = 1.000
 		ServerTitle.BorderSizePixel = 0
 		ServerTitle.Position = UDim2.new(0.0751359761, 0, 0, 0)
 		ServerTitle.Size = UDim2.new(0, 97, 0, 39)
@@ -1784,15 +1774,15 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		GlowFrame.Name = "GlowFrame"
 		GlowFrame.Parent = ServerFrame
 		GlowFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		GlowFrame.BackgroundTransparency = 0.7
+		GlowFrame.BackgroundTransparency = 1.000
 		GlowFrame.BorderSizePixel = 0
 		GlowFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
 		GlowFrame.Size = UDim2.new(0, 609, 0, 40)
 
 		Glow.Name = "Glow"
 		Glow.Parent = GlowFrame
-		Glow.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		Glow.BackgroundTransparency = 0.7
+		Glow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Glow.BackgroundTransparency = 1.000
 		Glow.BorderSizePixel = 0
 		Glow.Position = UDim2.new(0, -15, 0, -15)
 		Glow.Size = UDim2.new(1, 30, 1, 30)
@@ -1805,7 +1795,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ServerContentFrame.Name = "ServerContentFrame"
 		ServerContentFrame.Parent = ServerFrame
 		ServerContentFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		ServerContentFrame.BackgroundTransparency = 0.7
+		ServerContentFrame.BackgroundTransparency = 1.000
 		ServerContentFrame.BorderSizePixel = 0
 		ServerContentFrame.Position = UDim2.new(-0.0010054264, 0, 0.106338218, 0)
 		ServerContentFrame.Size = UDim2.new(0, 180, 0, 333)
@@ -1820,24 +1810,23 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelTitleFrame.BorderSizePixel = 0
 		ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
 		ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
-               ChannelTitleFrame.BackgroundTransparency = 0.5
 
 		Hashtag.Name = "Hashtag"
 		Hashtag.Parent = ChannelTitleFrame
-		Hashtag.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		Hashtag.BackgroundTransparency = 0.7
+		Hashtag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Hashtag.BackgroundTransparency = 1.000
 		Hashtag.BorderSizePixel = 0
 		Hashtag.Position = UDim2.new(0.0279720277, 0, 0, 0)
 		Hashtag.Size = UDim2.new(0, 19, 0, 39)
 		Hashtag.Font = Enum.Font.Gotham
-		Hashtag.Text = "❕"
-		Hashtag.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Hashtag.Text = "#"
+		Hashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
 		Hashtag.TextSize = 25.000
 
 		ChannelTitle.Name = "ChannelTitle"
 		ChannelTitle.Parent = ChannelTitleFrame
-		ChannelTitle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		ChannelTitle.BackgroundTransparency = 0.7
+		ChannelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ChannelTitle.BackgroundTransparency = 1.000
 		ChannelTitle.BorderSizePixel = 0
 		ChannelTitle.Position = UDim2.new(0.0862470865, 0, 0, 0)
 		ChannelTitle.Size = UDim2.new(0, 95, 0, 39)
@@ -1850,7 +1839,6 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelContentFrame.Name = "ChannelContentFrame"
 		ChannelContentFrame.Parent = ServerFrame
 		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-           ChannelContentFrame.BackgroundTransparency = 0.7
 		ChannelContentFrame.BorderSizePixel = 0
 		ChannelContentFrame.ClipsDescendants = true
 		ChannelContentFrame.Position = UDim2.new(0.294561088, 0, 0.106338218, 0)
@@ -1858,8 +1846,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 		GlowChannel.Name = "GlowChannel"
 		GlowChannel.Parent = ChannelContentFrame
-		GlowChannel.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		GlowChannel.BackgroundTransparency = 0.7
+		GlowChannel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		GlowChannel.BackgroundTransparency = 1.000
 		GlowChannel.BorderSizePixel = 0
 		GlowChannel.Position = UDim2.new(0, -33, 0, -91)
 		GlowChannel.Size = UDim2.new(1.06396091, 30, 0.228228226, 30)
@@ -1872,8 +1860,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ServerChannelHolder.Name = "ServerChannelHolder"
 		ServerChannelHolder.Parent = ServerContentFrame
 		ServerChannelHolder.Active = true
-		ServerChannelHolder.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		ServerChannelHolder.BackgroundTransparency = 0.7
+		ServerChannelHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ServerChannelHolder.BackgroundTransparency = 1.000
 		ServerChannelHolder.BorderSizePixel = 0
 		ServerChannelHolder.Position = UDim2.new(0.00535549596, 0, 0.0241984241, 0)
 		ServerChannelHolder.Selectable = false
@@ -1881,7 +1869,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ServerChannelHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
 		ServerChannelHolder.ScrollBarThickness = 4
 		ServerChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(18, 19, 21)
-		ServerChannelHolder.ScrollBarImageTransparency = 50
+		ServerChannelHolder.ScrollBarImageTransparency = 1
 
 		ServerChannelHolderLayout.Name = "ServerChannelHolderLayout"
 		ServerChannelHolderLayout.Parent = ServerChannelHolder
@@ -2036,8 +2024,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 			ChannelBtn.Name = text .. "ChannelBtn"
 			ChannelBtn.Parent = ServerChannelHolder
-			ChannelBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-                       ChannelBtn.BackgroundTransparency = 0.2
+			ChannelBtn.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 			ChannelBtn.BorderSizePixel = 0
 			ChannelBtn.Position = UDim2.new(0.24118948, 0, 0.578947365, 0)
 			ChannelBtn.Size = UDim2.new(0, 160, 0, 30)
@@ -2054,19 +2041,19 @@ ImageLabel.Image = "rbxassetid://6409799523"
 			ChannelBtnHashtag.Name = "ChannelBtnHashtag"
 			ChannelBtnHashtag.Parent = ChannelBtn
 			ChannelBtnHashtag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			ChannelBtnHashtag.BackgroundTransparency = 10.000
+			ChannelBtnHashtag.BackgroundTransparency = 1.000
 			ChannelBtnHashtag.BorderSizePixel = 0
 			ChannelBtnHashtag.Position = UDim2.new(0.0279720314, 0, 0, 0)
 			ChannelBtnHashtag.Size = UDim2.new(0, 24, 0, 30)
 			ChannelBtnHashtag.Font = Enum.Font.Gotham
-			ChannelBtnHashtag.Text = "❗"
-			ChannelBtnHashtag.TextColor3 = Color3.fromRGB(0, 0, 0)
+			ChannelBtnHashtag.Text = "#"
+			ChannelBtnHashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
 			ChannelBtnHashtag.TextSize = 21.000
 
 			ChannelBtnTitle.Name = "ChannelBtnTitle"
 			ChannelBtnTitle.Parent = ChannelBtn
 			ChannelBtnTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			ChannelBtnTitle.BackgroundTransparency = 10.000
+			ChannelBtnTitle.BackgroundTransparency = 1.000
 			ChannelBtnTitle.BorderSizePixel = 0
 			ChannelBtnTitle.Position = UDim2.new(0.173747092, 0, -0.166666672, 0)
 			ChannelBtnTitle.Size = UDim2.new(0, 95, 0, 39)
@@ -2084,7 +2071,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 			ChannelHolder.Parent = ChannelContentFrame
 			ChannelHolder.Active = true
 			ChannelHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			ChannelHolder.BackgroundTransparency = 10.000
+			ChannelHolder.BackgroundTransparency = 1.000
 			ChannelHolder.BorderSizePixel = 0
 			ChannelHolder.Position = UDim2.new(0.0360843192, 0, 0.0241984241, 0)
 			ChannelHolder.Size = UDim2.new(0, 412, 0, 314)
@@ -2149,8 +2136,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Button.Name = "Button"
 				Button.Parent = ChannelHolder
-				Button.BackgroundColor3 = Color3.fromRGB(0,0,10)
-                               Button.BackgroundTransparency = 0.2
+				Button.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
 				Button.Size = UDim2.new(0, 401, 0, 30)
 				Button.AutoButtonColor = false
 				Button.Font = Enum.Font.Gotham
@@ -2166,7 +2152,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(230,230,230)}
+						{BackgroundColor3 = Color3.fromRGB(103,123,196)}
 					):Play()
 				end)
 				
@@ -2184,7 +2170,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(0, 0, 10)}
+						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
@@ -2201,8 +2187,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = ChannelHolder
-				Toggle.BackgroundColor3 = Color3.fromRGB(0,0,10)
-                               Toggle.BackgroundTransparency = 0.10
+				Toggle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Toggle.Size = UDim2.new(0, 401, 0, 30)
@@ -2229,7 +2214,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				ToggleFrame.BackgroundColor3 = Color3.fromRGB(114, 118, 125)
 				ToggleFrame.Position = UDim2.new(0.900481343, -5, 0.13300018, 0)
 				ToggleFrame.Size = UDim2.new(0, 40, 0, 21)
-                               
+
 				ToggleFrameCorner.CornerRadius = UDim.new(1, 8)
 				ToggleFrameCorner.Name = "ToggleFrameCorner"
 				ToggleFrameCorner.Parent = ToggleFrame
@@ -2332,8 +2317,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Slider.Name = "Slider"
 				Slider.Parent = ChannelHolder
-				Slider.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
-                               Slider.BackgroundTransparency = 0.10
+				Slider.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Slider.BorderSizePixel = 0
 				Slider.Position = UDim2.new(0, 0, 0.216560602, 0)
 				Slider.Size = UDim2.new(0, 401, 0, 38)
@@ -2358,7 +2342,6 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				SliderFrame.Name = "SliderFrame"
 				SliderFrame.Parent = Slider
 				SliderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-                               SliderFrame.BackgroundTransparency = 5.000
 				SliderFrame.BackgroundColor3 = Color3.fromRGB(79, 84, 92)
 				SliderFrame.Position = UDim2.new(0.497999996, 0, 0.757000029, 0)
 				SliderFrame.Size = UDim2.new(0, 385, 0, 8)
@@ -2529,47 +2512,47 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				local ArrowImg = Instance.new("ImageLabel")
 				local DropdownFrameBtn = Instance.new("TextButton")
 
-                                Dropdown.Name = "Dropdown"
-                                Dropdown.Parent = ChannelHolder
-                                Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-                                Dropdown.BackgroundTransparency = 1.000
-                                Dropdown.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
-                                Dropdown.Size = UDim2.new(0, 403, 0, 73)
+				Dropdown.Name = "Dropdown"
+				Dropdown.Parent = ChannelHolder
+				Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Dropdown.BackgroundTransparency = 1.000
+				Dropdown.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
+				Dropdown.Size = UDim2.new(0, 403, 0, 73)
 
-                                DropdownTitle.Name = "DropdownTitle"
-                                DropdownTitle.Parent = Dropdown
-                                DropdownTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-                                DropdownTitle.BackgroundTransparency = 1.000
-                                DropdownTitle.Position = UDim2.new(0, 5, 0, 0)
-                                DropdownTitle.Size = UDim2.new(0, 200, 0, 29)
-                                DropdownTitle.Font = Enum.Font.Gotham
-                                DropdownTitle.Text = text
-                                DropdownTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
-                                DropdownTitle.TextSize = 14.000
-                                DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
+				DropdownTitle.Name = "DropdownTitle"
+				DropdownTitle.Parent = Dropdown
+				DropdownTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				DropdownTitle.BackgroundTransparency = 1.000
+				DropdownTitle.Position = UDim2.new(0, 5, 0, 0)
+				DropdownTitle.Size = UDim2.new(0, 200, 0, 29)
+				DropdownTitle.Font = Enum.Font.Gotham
+				DropdownTitle.Text = text
+				DropdownTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				DropdownTitle.TextSize = 14.000
+				DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-                                DropdownFrameOutline.Name = "DropdownFrameOutline"
-                                DropdownFrameOutline.Parent = DropdownTitle
-                                DropdownFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
-                                DropdownFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
-                                DropdownFrameOutline.Position = UDim2.new(0.988442957, 0, 1.6197437, 0)
-                                DropdownFrameOutline.Size = UDim2.new(0, 396, 0, 36)
+				DropdownFrameOutline.Name = "DropdownFrameOutline"
+				DropdownFrameOutline.Parent = DropdownTitle
+				DropdownFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
+				DropdownFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
+				DropdownFrameOutline.Position = UDim2.new(0.988442957, 0, 1.6197437, 0)
+				DropdownFrameOutline.Size = UDim2.new(0, 396, 0, 36)
 
-                                DropdownFrameOutlineCorner.CornerRadius = UDim.new(0, 3)
-                                DropdownFrameOutlineCorner.Name = "DropdownFrameOutlineCorner"
-                                DropdownFrameOutlineCorner.Parent = DropdownFrameOutline
+				DropdownFrameOutlineCorner.CornerRadius = UDim.new(0, 3)
+				DropdownFrameOutlineCorner.Name = "DropdownFrameOutlineCorner"
+				DropdownFrameOutlineCorner.Parent = DropdownFrameOutline
 
-                                DropdownFrame.Name = "DropdownFrame"
-                                DropdownFrame.Parent = DropdownTitle
-                                DropdownFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
-                                DropdownFrame.ClipsDescendants = true
-                                DropdownFrame.Position = UDim2.new(0.00999999978, 0, 1.06638527, 0)
-                                DropdownFrame.Selectable = true
-                                DropdownFrame.Size = UDim2.new(0, 392, 0, 32)
+				DropdownFrame.Name = "DropdownFrame"
+				DropdownFrame.Parent = DropdownTitle
+				DropdownFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
+				DropdownFrame.ClipsDescendants = true
+				DropdownFrame.Position = UDim2.new(0.00999999978, 0, 1.06638527, 0)
+				DropdownFrame.Selectable = true
+				DropdownFrame.Size = UDim2.new(0, 392, 0, 32)
 
-                                DropdownFrameCorner.CornerRadius = UDim.new(0, 3)
-                                DropdownFrameCorner.Name = "DropdownFrameCorner"
-                                DropdownFrameCorner.Parent = DropdownFrame
+				DropdownFrameCorner.CornerRadius = UDim.new(0, 3)
+				DropdownFrameCorner.Name = "DropdownFrameCorner"
+				DropdownFrameCorner.Parent = DropdownFrame
 
 				CurrentSelectedText.Name = "CurrentSelectedText"
 				CurrentSelectedText.Parent = DropdownFrame
@@ -2688,7 +2671,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					elseif itemcount == 2 then
 						framesize = 58
 					elseif itemcount >= 3 then
-						framesize = 8
+						framesize = 87
 					end
 					
 					local Item = Instance.new("TextButton")
@@ -3085,8 +3068,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Textbox.Name = "Textbox"
 				Textbox.Parent = ChannelHolder
-				Textbox.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
-				Textbox.BackgroundTransparency = 0.5
+				Textbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Textbox.BackgroundTransparency = 1.000
 				Textbox.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Textbox.Size = UDim2.new(0, 403, 0, 73)
 
