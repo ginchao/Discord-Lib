@@ -312,13 +312,13 @@ function DiscordLib:Window(text)
 
 	MinimizeBtn.MouseEnter:Connect(
 		function()
-			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(40, 43, 46)
+			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
 		end
 	)
 
 	MinimizeBtn.MouseLeave:Connect(
 		function()
-			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
 		end
 	)
 
@@ -2550,7 +2550,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				DropdownFrameOutline.Name = "DropdownFrameOutline"
 				DropdownFrameOutline.Parent = DropdownTitle
 				DropdownFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
-				DropdownFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
+				DropdownFrameOutline.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+                               DropdownFrameOutline.BackgroundTransparency = 0.2
 				DropdownFrameOutline.Position = UDim2.new(0.988442957, 0, 1.6197437, 0)
 				DropdownFrameOutline.Size = UDim2.new(0, 396, 0, 36)
 
