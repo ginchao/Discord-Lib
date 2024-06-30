@@ -1558,7 +1558,7 @@ function DiscordLib:Window(text)
 		Notification.Parent = NotificationHolderMain
 		Notification.AnchorPoint = Vector2.new(0.5, 0.5)
 		Notification.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
-               Notification.BackgroundTransparency = 5
+               
 		Notification.ClipsDescendants = true
 		Notification.Position = UDim2.new(0.524819076, 0, 0.469270051, 0)
 		Notification.Size = UDim2.new(0, 0, 0, 0)
@@ -1612,14 +1612,14 @@ function DiscordLib:Window(text)
 		Text2.Size = UDim2.new(0, 272, 0, 63)
 		Text2.Font = Enum.Font.Gotham
 		Text2.Text = desctext
-		Text2.TextColor3 = Color3.fromRGB(171, 172, 176)
+		Text2.TextColor3 = Color3.fromRGB(200, 200, 210)
 		Text2.TextSize = 14.000
 		Text2.TextWrapped = true
 
 		AlrightBtn.Name = "AlrightBtn"
 		AlrightBtn.Parent = Notification
-		AlrightBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-               AlrighBtn.BackgroundTransparency = 0.2
+		AlrightBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+               AlrighBtn.BackgroundTransparency = 0
 		AlrightBtn.Position = UDim2.new(0.0332369953, 0, 0.789141417, 0)
 		AlrightBtn.Size = UDim2.new(0, 322, 0, 27)
 		AlrightBtn.Font = Enum.Font.Gotham
