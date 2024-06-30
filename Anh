@@ -1,6 +1,7 @@
-local anh = {"rbxassetid://18273888587","rbxassetid://18273181434","rbxassetid://18275995451"}
+local anh1 = {"rbxassetid://18273888587","rbxassetid://18273181434","rbxassetid://18275995451"}
 local function gai()
-for _,  v in pairs(anh)
-return true
+for _,  v in pairs(anh1)
+return v
 end
+return true
 end
