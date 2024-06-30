@@ -1787,7 +1787,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
                 GlowFrame.Name = "GlowFrame"
                 GlowFrame.Parent = ServerFrame
                 GlowFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-                GlowFrame.BackgroundTransparency = 0.7
+                GlowFrame.BackgroundTransparency = 50
                 GlowFrame.BorderSizePixel = 0
                 GlowFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
                 GlowFrame.Size = UDim2.new(0, 609, 0, 40)
@@ -1823,7 +1823,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
                 ChannelTitleFrame.BorderSizePixel = 0
                 ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
                 ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
-               ChannelTitleFrame.BackgroundTransparency = 1
+               ChannelTitleFrame.BackgroundTransparency = 50
 
                 Hashtag.Name = "Hashtag"
                 Hashtag.Parent = ChannelTitleFrame
