@@ -2053,7 +2053,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 			ChannelBtnHashtag.Name = "ChannelBtnHashtag"
 			ChannelBtnHashtag.Parent = ChannelBtn
-			ChannelBtnHashtag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			ChannelBtnHashtag.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 			ChannelBtnHashtag.BackgroundTransparency = 0.2
 			ChannelBtnHashtag.BorderSizePixel = 0
 			ChannelBtnHashtag.Position = UDim2.new(0.0279720314, 0, 0, 0)
@@ -2530,20 +2530,20 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Dropdown.Name = "Dropdown"
 				Dropdown.Parent = ChannelHolder
-				Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Dropdown.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
 				Dropdown.BackgroundTransparency = 0.2
 				Dropdown.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Dropdown.Size = UDim2.new(0, 403, 0, 73)
 
 				DropdownTitle.Name = "DropdownTitle"
 				DropdownTitle.Parent = Dropdown
-				DropdownTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				DropdownTitle.BackgroundTransparency = 1.000
+				DropdownTitle.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+				DropdownTitle.BackgroundTransparency = 0.2
 				DropdownTitle.Position = UDim2.new(0, 5, 0, 0)
 				DropdownTitle.Size = UDim2.new(0, 200, 0, 29)
 				DropdownTitle.Font = Enum.Font.Gotham
 				DropdownTitle.Text = text
-				DropdownTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				DropdownTitle.TextColor3 = Color3.fromRGB(1, 1, 1)
 				DropdownTitle.TextSize = 14.000
 				DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
 
