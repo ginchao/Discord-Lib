@@ -3132,7 +3132,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				TextboxFrameCorner.Parent = TextboxFrame
 
 				TextBox.Parent = TextboxFrame
-				TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
 				TextBox.BackgroundTransparency = 0.2
 				TextBox.Position = UDim2.new(0.0178571437, 0, 0, 0)
 				TextBox.Size = UDim2.new(0, 377, 0, 32)
