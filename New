@@ -2037,6 +2037,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 			ChannelBtn.Name = text .. "ChannelBtn"
 			ChannelBtn.Parent = ServerChannelHolder
 			ChannelBtn.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                       ChannelBtn.BackgroundTransparency = 0.2
 			ChannelBtn.BorderSizePixel = 0
 			ChannelBtn.Position = UDim2.new(0.24118948, 0, 0.578947365, 0)
 			ChannelBtn.Size = UDim2.new(0, 160, 0, 30)
@@ -2053,12 +2054,12 @@ ImageLabel.Image = "rbxassetid://6409799523"
 			ChannelBtnHashtag.Name = "ChannelBtnHashtag"
 			ChannelBtnHashtag.Parent = ChannelBtn
 			ChannelBtnHashtag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			ChannelBtnHashtag.BackgroundTransparency = 1.000
+			ChannelBtnHashtag.BackgroundTransparency = 0.2
 			ChannelBtnHashtag.BorderSizePixel = 0
 			ChannelBtnHashtag.Position = UDim2.new(0.0279720314, 0, 0, 0)
 			ChannelBtnHashtag.Size = UDim2.new(0, 24, 0, 30)
 			ChannelBtnHashtag.Font = Enum.Font.Gotham
-			ChannelBtnHashtag.Text = "#"
+			ChannelBtnHashtag.Text = "❗"
 			ChannelBtnHashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
 			ChannelBtnHashtag.TextSize = 21.000
 
@@ -2148,7 +2149,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Button.Name = "Button"
 				Button.Parent = ChannelHolder
-				Button.BackgroundColor3 = Color3.fromRGB(114, 137, 228)
+				Button.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+                               Button.BackgroundTransparency = 0.2
 				Button.Size = UDim2.new(0, 401, 0, 30)
 				Button.AutoButtonColor = false
 				Button.Font = Enum.Font.Gotham
@@ -2164,7 +2166,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(103,123,196)}
+						{BackgroundColor3 = Color3.fromRGB(230,230,230)}
 					):Play()
 				end)
 				
@@ -2182,7 +2184,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
+						{BackgroundColor3 = Color3.fromRGB(0, 0, 10)}
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
@@ -2199,7 +2201,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = ChannelHolder
-				Toggle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+                               Toggle.BackgroundTransparency = 0.2
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Toggle.Size = UDim2.new(0, 401, 0, 30)
@@ -2329,7 +2332,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Slider.Name = "Slider"
 				Slider.Parent = ChannelHolder
-				Slider.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Slider.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+                               Slider.BackgroundTransparency = 0.2
 				Slider.BorderSizePixel = 0
 				Slider.Position = UDim2.new(0, 0, 0.216560602, 0)
 				Slider.Size = UDim2.new(0, 401, 0, 38)
@@ -2527,7 +2531,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				Dropdown.Name = "Dropdown"
 				Dropdown.Parent = ChannelHolder
 				Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				Dropdown.BackgroundTransparency = 1.000
+				Dropdown.BackgroundTransparency = 0.2
 				Dropdown.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Dropdown.Size = UDim2.new(0, 403, 0, 73)
 
