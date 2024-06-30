@@ -3098,7 +3098,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				TextboxTitle.Name = "TextboxTitle"
 				TextboxTitle.Parent = Textbox
 				TextboxTitle.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
-				TextboxTitle.BackgroundTransparency = 0.2
+				TextboxTitle.BackgroundTransparency = 50
 				TextboxTitle.Position = UDim2.new(0, 5, 0, 0)
 				TextboxTitle.Size = UDim2.new(0, 200, 0, 29)
 				TextboxTitle.Font = Enum.Font.Gotham
@@ -3140,7 +3140,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				TextBox.PlaceholderColor3 = Color3.fromRGB(91, 95, 101)
 				TextBox.PlaceholderText = placetext
 				TextBox.Text = ""
-				TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextBox.TextColor3 = Color3.fromRGB(0, 0, 10)
 				TextBox.TextSize = 14.000
 				TextBox.TextXAlignment = Enum.TextXAlignment.Left
 				
