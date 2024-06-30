@@ -1726,7 +1726,177 @@ function DiscordLib:Window(text)
 		local ServerChannelHolderLayout = Instance.new("UIListLayout")
 		local ServerChannelHolderPadding = Instance.new("UIPadding")
 
+                ServerFrame.Name = "ServerFrame"
+                ServerFrame.Parent = ServersHolder
+                ServerFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                ServerFrame.BorderSizePixel = 0
+                ServerFrame.ClipsDescendants = true
+                ServerFrame.Position = UDim2.new(0.105726875, 0, 1.01262593, 0)
+                ServerFrame.Size = UDim2.new(0, 609, 0, 373)
+                ServerFrame.Visible = false
 
+
+local ImageLabel = Instance.new("ImageLabel")
+ImageLabel.Name = "MyImage"
+ImageLabel.Parent = ServerFrame
+ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
+ImageLabel.BackgroundTransparency = 1 
+ImageLabel.Image = "rbxassetid://6409799523" 
+
+
+                ServerFrame1.Name = "ServerFrame1"
+                ServerFrame1.Parent = ServerFrame
+                ServerFrame1.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                ServerFrame1.BorderSizePixel = 0
+                ServerFrame1.Position = UDim2.new(0, 0, 0.972290039, 0)
+                ServerFrame1.Size = UDim2.new(0, 12, 0, 10)
+
+                ServerFrame2.Name = "ServerFrame2"
+                ServerFrame2.Parent = ServerFrame
+                ServerFrame2.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                ServerFrame2.BorderSizePixel = 0
+                ServerFrame2.Position = UDim2.new(0.980295539, 0, 0.972290039, 0)
+                ServerFrame2.Size = UDim2.new(0, 12, 0, 9)
+
+                ServerTitleFrame.Name = "ServerTitleFrame"
+                ServerTitleFrame.Parent = ServerFrame
+                ServerTitleFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                ServerTitleFrame.BackgroundTransparency = 0.20 --đây
+                ServerTitleFrame.BorderSizePixel = 0
+                ServerTitleFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
+                ServerTitleFrame.Size = UDim2.new(0, 180, 0, 40)
+
+                ServerTitle.Name = "ServerTitle"
+                ServerTitle.Parent = ServerTitleFrame
+                ServerTitle.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                ServerTitle.BackgroundTransparency = 0.5
+                ServerTitle.BorderSizePixel = 0
+                ServerTitle.Position = UDim2.new(0.0751359761, 0, 0, 0)
+                ServerTitle.Size = UDim2.new(0, 97, 0, 39)
+                ServerTitle.Font = Enum.Font.GothamSemibold
+                ServerTitle.Text = text
+                ServerTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+                ServerTitle.TextSize = 15.000
+                ServerTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+                GlowFrame.Name = "GlowFrame"
+                GlowFrame.Parent = ServerFrame
+                GlowFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                GlowFrame.BackgroundTransparency = 0.7
+                GlowFrame.BorderSizePixel = 0
+                GlowFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
+                GlowFrame.Size = UDim2.new(0, 609, 0, 40)
+
+                Glow.Name = "Glow"
+                Glow.Parent = GlowFrame
+                Glow.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                Glow.BackgroundTransparency = 0.7
+                Glow.BorderSizePixel = 0
+                Glow.Position = UDim2.new(0, -15, 0, -15)
+                Glow.Size = UDim2.new(1, 30, 1, 30)
+                Glow.ZIndex = 0
+                Glow.Image = "rbxassetid://4996891970"
+                Glow.ImageColor3 = Color3.fromRGB(15, 15, 15)
+                Glow.ScaleType = Enum.ScaleType.Slice
+                Glow.SliceCenter = Rect.new(20, 20, 280, 280)
+
+                ServerContentFrame.Name = "ServerContentFrame"
+                ServerContentFrame.Parent = ServerFrame
+                ServerContentFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+                ServerContentFrame.BackgroundTransparency = 0.7
+                ServerContentFrame.BorderSizePixel = 0
+                ServerContentFrame.Position = UDim2.new(-0.0010054264, 0, 0.106338218, 0)
+                ServerContentFrame.Size = UDim2.new(0, 180, 0, 333)
+
+                ServerCorner.CornerRadius = UDim.new(0, 9)
+                ServerCorner.Name = "ServerCorner"
+                ServerCorner.Parent = ServerFrame
+
+                ChannelTitleFrame.Name = "ChannelTitleFrame"
+                ChannelTitleFrame.Parent = ServerFrame
+                ChannelTitleFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+                ChannelTitleFrame.BorderSizePixel = 0
+                ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
+                ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
+               ChannelTitleFrame.BackgroundTransparency = 0.5
+
+                Hashtag.Name = "Hashtag"
+                Hashtag.Parent = ChannelTitleFrame
+                Hashtag.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+                Hashtag.BackgroundTransparency = 0.7
+                Hashtag.BorderSizePixel = 0
+                Hashtag.Position = UDim2.new(0.0279720277, 0, 0, 0)
+                Hashtag.Size = UDim2.new(0, 19, 0, 39)
+                Hashtag.Font = Enum.Font.Gotham
+                Hashtag.Text = "❕"
+                Hashtag.TextColor3 = Color3.fromRGB(0, 0, 0)
+                Hashtag.TextSize = 25.000
+
+                ChannelTitle.Name = "ChannelTitle"
+                ChannelTitle.Parent = ChannelTitleFrame
+                ChannelTitle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+                ChannelTitle.BackgroundTransparency = 0.7
+                ChannelTitle.BorderSizePixel = 0
+                ChannelTitle.Position = UDim2.new(0.0862470865, 0, 0, 0)
+                ChannelTitle.Size = UDim2.new(0, 95, 0, 39)
+                ChannelTitle.Font = Enum.Font.GothamSemibold
+                ChannelTitle.Text = ""
+                ChannelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+                ChannelTitle.TextSize = 15.000
+                ChannelTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+                ChannelContentFrame.Name = "ChannelContentFrame"
+                ChannelContentFrame.Parent = ServerFrame
+                ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+           ChannelContentFrame.BackgroundTransparency = 0.7
+                ChannelContentFrame.BorderSizePixel = 0
+                ChannelContentFrame.ClipsDescendants = true
+                ChannelContentFrame.Position = UDim2.new(0.294561088, 0, 0.106338218, 0)
+                ChannelContentFrame.Size = UDim2.new(0, 429, 0, 333)
+
+                GlowChannel.Name = "GlowChannel"
+                GlowChannel.Parent = ChannelContentFrame
+                GlowChannel.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+                GlowChannel.BackgroundTransparency = 0.7
+                GlowChannel.BorderSizePixel = 0
+                GlowChannel.Position = UDim2.new(0, -33, 0, -91)
+                GlowChannel.Size = UDim2.new(1.06396091, 30, 0.228228226, 30)
+                GlowChannel.ZIndex = 0
+                GlowChannel.Image = "rbxassetid://4996891970"
+                GlowChannel.ImageColor3 = Color3.fromRGB(15, 15, 15)
+                GlowChannel.ScaleType = Enum.ScaleType.Slice
+                GlowChannel.SliceCenter = Rect.new(20, 20, 280, 280)
+
+                ServerChannelHolder.Name = "ServerChannelHolder"
+                ServerChannelHolder.Parent = ServerContentFrame
+                ServerChannelHolder.Active = true
+                ServerChannelHolder.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+                ServerChannelHolder.BackgroundTransparency = 0.7
+                ServerChannelHolder.BorderSizePixel = 0
+                ServerChannelHolder.Position = UDim2.new(0.00535549596, 0, 0.0241984241, 0)
+                ServerChannelHolder.Selectable = false
+                ServerChannelHolder.Size = UDim2.new(0, 179, 0, 278)
+                ServerChannelHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
+                ServerChannelHolder.ScrollBarThickness = 4
+                ServerChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(18, 19, 21)
+                ServerChannelHolder.ScrollBarImageTransparency = 50
+
+                ServerChannelHolderLayout.Name = "ServerChannelHolderLayout"
+                ServerChannelHolderLayout.Parent = ServerChannelHolder
+                ServerChannelHolderLayout.SortOrder = Enum.SortOrder.LayoutOrder
+                ServerChannelHolderLayout.Padding = UDim.new(0, 4)
+
+                ServerChannelHolderPadding.Name = "ServerChannelHolderPadding"
+                ServerChannelHolderPadding.Parent = ServerChannelHolder
+                ServerChannelHolderPadding.PaddingLeft = UDim.new(0, 9)
+
+                ServerChannelHolder.MouseEnter:Connect(function()
+                        ServerChannelHolder.ScrollBarImageTransparency = 0
+                end)
+
+                ServerChannelHolder.MouseLeave:Connect(function()
+                        ServerChannelHolder.ScrollBarImageTransparency = 1
+                end)
 		
 		Server.MouseEnter:Connect(
 			function()
