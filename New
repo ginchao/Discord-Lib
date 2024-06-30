@@ -3103,7 +3103,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				TextboxTitle.Size = UDim2.new(0, 200, 0, 29)
 				TextboxTitle.Font = Enum.Font.Gotham
 				TextboxTitle.Text = text
-				TextboxTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				TextboxTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				TextboxTitle.TextSize = 14.000
 				TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
