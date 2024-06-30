@@ -1618,13 +1618,13 @@ function DiscordLib:Window(text)
 
 		AlrightBtn.Name = "AlrightBtn"
 		AlrightBtn.Parent = Notification
-		AlrightBtn.BackgroundColor3 = Color3.fromRGB(20,20, 20)
+		AlrightBtn.BackgroundColor3 = Color3.fromRGB(200,200, 200)
         
 		AlrightBtn.Position = UDim2.new(0.0332369953, 0, 0.789141417, 0)
 		AlrightBtn.Size = UDim2.new(0, 322, 0, 27)
 		AlrightBtn.Font = Enum.Font.Gotham
 		AlrightBtn.Text = btntext
-		AlrightBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+		AlrightBtn.TextColor3 = Color3.fromRGB(20, 20, 20)
 		AlrightBtn.TextSize = 13.000
 		AlrightBtn.AutoButtonColor = false
 		
@@ -1652,7 +1652,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(103,123,196)}
+				{BackgroundColor3 = Color3.fromRGB(0,0,10)}
 			):Play()
 		end)
 
@@ -1660,7 +1660,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
+				{BackgroundColor3 = Color3.fromRGB(200, 200, 200)}
 			):Play()
 		end)
 	end
@@ -1679,7 +1679,7 @@ function DiscordLib:Window(text)
 
 		Server.Name = text .. "Server"
 		Server.Parent = ServersHold
-		Server.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+		Server.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
 		Server.Position = UDim2.new(0.125, 0, 0, 0)
 		Server.Size = UDim2.new(0, 47, 0, 47)
 		Server.AutoButtonColor = false
@@ -2354,7 +2354,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				SliderTitle.Size = UDim2.new(0, 200, 0, 27)
 				SliderTitle.Font = Enum.Font.Gotham
 				SliderTitle.Text = text
-				SliderTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				SliderTitle.TextSize = 14.000
 				SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -3196,7 +3196,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				LabelTitle.Size = UDim2.new(0, 200, 0, 30)
 				LabelTitle.Font = Enum.Font.Gotham
 				LabelTitle.Text = text
-				LabelTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				LabelTitle.TextSize = 14.000
 				LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 				
