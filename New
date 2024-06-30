@@ -3091,7 +3091,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				Textbox.Name = "Textbox"
 				Textbox.Parent = ChannelHolder
 				Textbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				Textbox.BackgroundTransparency = 1.000
+				Textbox.BackgroundTransparency = 1
 				Textbox.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Textbox.Size = UDim2.new(0, 403, 0, 73)
 
@@ -3120,7 +3120,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				TextboxFrame.Name = "TextboxFrame"
 				TextboxFrame.Parent = TextboxTitle
-				TextboxFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
+				TextboxFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+    TextboxFrame.BackgroundTransparency = 0.2
 				TextboxFrame.ClipsDescendants = true
 				TextboxFrame.Position = UDim2.new(0.00999999978, 0, 1.06638527, 0)
 				TextboxFrame.Selectable = true
