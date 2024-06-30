@@ -1,0 +1,6 @@
+local anh = {"rbxassetid://18273888587","rbxassetid://18273181434"}
+local function gai()
+for _,  v in pairs(anh)
+return true
+end
+end
