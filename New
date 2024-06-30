@@ -704,6 +704,7 @@ function DiscordLib:Window(text)
 		NotificationHolder.Name = "NotificationHolder"
 		NotificationHolder.Parent = SettingsHolder
 		NotificationHolder.BackgroundColor3 = Color3.fromRGB(22,22,22)
+               
 		NotificationHolder.Position = UDim2.new(-0.00881057233, 0, -0.00266666664, 0)
 		NotificationHolder.Size = UDim2.new(0, 687, 0, 375)
 		NotificationHolder.AutoButtonColor = false
@@ -1556,7 +1557,8 @@ function DiscordLib:Window(text)
 		Notification.Name = "Notification"
 		Notification.Parent = NotificationHolderMain
 		Notification.AnchorPoint = Vector2.new(0.5, 0.5)
-		Notification.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+		Notification.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+               Notification.BackgroundTransparency = 0.2
 		Notification.ClipsDescendants = true
 		Notification.Position = UDim2.new(0.524819076, 0, 0.469270051, 0)
 		Notification.Size = UDim2.new(0, 0, 0, 0)
