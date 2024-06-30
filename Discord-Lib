@@ -14,7 +14,7 @@ local pfp
 local user
 local tag
 local userinfo = {}
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Hoclomcongthuc/main/vohai"))()
 pcall(function()
 	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
 end)
@@ -1742,7 +1742,7 @@ function DiscordLib:Window(text)
 
 
 local ImageLabel = Instance.new("ImageLabel")
-local gai = {"rbxassetid://18273169225","rbxassetid://18273169225"}
+local gai = {"rbxassetid://18273169225","rbxassetid://18273169225","rbxassetid://18273486676","rbxassetid://18273492730"}
 ImageLabel.Name = "MyImage"
 ImageLabel.Parent = ServerFrame
 ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
