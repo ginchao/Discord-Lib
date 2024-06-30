@@ -3097,8 +3097,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				TextboxTitle.Name = "TextboxTitle"
 				TextboxTitle.Parent = Textbox
-				TextboxTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				TextboxTitle.BackgroundTransparency = 1.000
+				TextboxTitle.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+				TextboxTitle.BackgroundTransparency = 0.2
 				TextboxTitle.Position = UDim2.new(0, 5, 0, 0)
 				TextboxTitle.Size = UDim2.new(0, 200, 0, 29)
 				TextboxTitle.Font = Enum.Font.Gotham
@@ -3110,7 +3110,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				TextboxFrameOutline.Name = "TextboxFrameOutline"
 				TextboxFrameOutline.Parent = TextboxTitle
 				TextboxFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
-				TextboxFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
+				TextboxFrameOutline.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
 				TextboxFrameOutline.Position = UDim2.new(0.988442957, 0, 1.6197437, 0)
 				TextboxFrameOutline.Size = UDim2.new(0, 396, 0, 36)
 
