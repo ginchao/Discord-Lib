@@ -2370,7 +2370,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				CurrentValueFrame.Name = "CurrentValueFrame"
 				CurrentValueFrame.Parent = SliderFrame
-				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
 				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
 
 				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
@@ -3091,7 +3091,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				Textbox.Name = "Textbox"
 				Textbox.Parent = ChannelHolder
 				Textbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				Textbox.BackgroundTransparency = 1
+				Textbox.BackgroundTransparency = 0.1
 				Textbox.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Textbox.Size = UDim2.new(0, 403, 0, 73)
 
@@ -3133,14 +3133,14 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				TextBox.Parent = TextboxFrame
 				TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				TextBox.BackgroundTransparency = 1.000
+				TextBox.BackgroundTransparency = 0.2
 				TextBox.Position = UDim2.new(0.0178571437, 0, 0, 0)
 				TextBox.Size = UDim2.new(0, 377, 0, 32)
 				TextBox.Font = Enum.Font.Gotham
 				TextBox.PlaceholderColor3 = Color3.fromRGB(91, 95, 101)
 				TextBox.PlaceholderText = placetext
 				TextBox.Text = ""
-				TextBox.TextColor3 = Color3.fromRGB(193, 195, 197)
+				TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 				TextBox.TextSize = 14.000
 				TextBox.TextXAlignment = Enum.TextXAlignment.Left
 				
@@ -3148,7 +3148,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					TweenService:Create(
 						TextboxFrameOutline,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
+						{BackgroundColor3 = Color3.fromRGB(200, 200, 200)}
 					):Play()
 				end)
 				
@@ -3156,7 +3156,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					TweenService:Create(
 						TextboxFrameOutline,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(37, 40, 43)}
+						{BackgroundColor3 = Color3.fromRGB(200, 200, 200)}
 					):Play()
 					if ep then
 						if #TextBox.Text > 0 then
@@ -3177,7 +3177,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Label.Name = "Label"
 				Label.Parent = ChannelHolder
-				Label.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Label.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+    Label.BackgroundTransparency = 0.2
 				Label.BorderSizePixel = 0
 				Label.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Label.Size = UDim2.new(0, 401, 0, 30)
