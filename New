@@ -1742,7 +1742,7 @@ function DiscordLib:Window(text)
 
 
 local ImageLabel = Instance.new("ImageLabel")
-local gai = {"rbxassetid://846641463","rbxassetid://846564656"}
+local gai = {"rbxassetid://18273169225","rbxassetid://18273169225"}
 ImageLabel.Name = "MyImage"
 ImageLabel.Parent = ServerFrame
 ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
