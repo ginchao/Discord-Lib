@@ -1747,7 +1747,7 @@ ImageLabel.Name = "MyImage"
 ImageLabel.Parent = ServerFrame
 ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
 ImageLabel.BackgroundTransparency = 1 
-ImageLabel.Image = gai[math.random(1,#gai)] 
+ImageLabel.Image = gai
 
 
                 ServerFrame1.Name = "ServerFrame1"
