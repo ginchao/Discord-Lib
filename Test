@@ -2530,7 +2530,6 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				local DropdownFrameBtn = Instance.new("TextButton")
 
                                 Dropdown.Name = "Dropdown"
-                                Dropdo                                Dropdown.Name = "Dropdown"
                                 Dropdown.Parent = ChannelHolder
                                 Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                                 Dropdown.BackgroundTransparency = 1.000
