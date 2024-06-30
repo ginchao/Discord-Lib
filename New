@@ -1742,11 +1742,12 @@ function DiscordLib:Window(text)
 
 
 local ImageLabel = Instance.new("ImageLabel")
+local gai = {"rbxassetid://846641463","rbxassetid://846564656"}
 ImageLabel.Name = "MyImage"
 ImageLabel.Parent = ServerFrame
 ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
 ImageLabel.BackgroundTransparency = 1 
-ImageLabel.Image = "rbxassetid://6409799523" 
+ImageLabel.Image = gai[math.random(1,#gai)] 
 
 
                 ServerFrame1.Name = "ServerFrame1"
