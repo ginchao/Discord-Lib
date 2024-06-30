@@ -127,7 +127,7 @@ function DiscordLib:Window(text)
 
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
-	TopFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TopFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	TopFrame.BackgroundTransparency = 1.000
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -135,7 +135,7 @@ function DiscordLib:Window(text)
 	
 	TopFrameHolder.Name = "TopFrameHolder"
 	TopFrameHolder.Parent = TopFrame
-	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	TopFrameHolder.BackgroundTransparency = 1.000
 	TopFrameHolder.BorderSizePixel = 0
 	TopFrameHolder.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -143,13 +143,13 @@ function DiscordLib:Window(text)
 
 	Title.Name = "Title"
 	Title.Parent = TopFrame
-	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	Title.BackgroundTransparency = 0.2
 	Title.Position = UDim2.new(0.0102790017, 0, 0, 0)
 	Title.Size = UDim2.new(0, 192, 0, 23)
 	Title.Font = Enum.Font.Gotham
 	Title.Text = text
-	Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -173,7 +173,7 @@ function DiscordLib:Window(text)
 	CloseIcon.Position = UDim2.new(0.189182192, 0, 0.128935531, 0)
 	CloseIcon.Size = UDim2.new(0, 17, 0, 17)
 	CloseIcon.Image = "http://www.roblox.com/asset/?id=6035047409"
-	CloseIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
+	CloseIcon.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
 	MinimizeBtn.Name = "MinimizeButton"
 	MinimizeBtn.Parent = TopFrame
@@ -195,7 +195,7 @@ function DiscordLib:Window(text)
 	MinimizeIcon.Position = UDim2.new(0.189182192, 0, 0.128935531, 0)
 	MinimizeIcon.Size = UDim2.new(0, 17, 0, 17)
 	MinimizeIcon.Image = "http://www.roblox.com/asset/?id=6035067836"
-	MinimizeIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
+	MinimizeIcon.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
 	ServersHolder.Name = "ServersHolder"
 	ServersHolder.Parent = TopFrameHolder
@@ -1771,7 +1771,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ServerTitle.Name = "ServerTitle"
 		ServerTitle.Parent = ServerTitleFrame
 		ServerTitle.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		ServerTitle.BackgroundTransparency = 0.20
+		ServerTitle.BackgroundTransparency = 0.5
 		ServerTitle.BorderSizePixel = 0
 		ServerTitle.Position = UDim2.new(0.0751359761, 0, 0, 0)
 		ServerTitle.Size = UDim2.new(0, 97, 0, 39)
@@ -1784,7 +1784,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		GlowFrame.Name = "GlowFrame"
 		GlowFrame.Parent = ServerFrame
 		GlowFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		GlowFrame.BackgroundTransparency = 0.20
+		GlowFrame.BackgroundTransparency = 0.5
 		GlowFrame.BorderSizePixel = 0
 		GlowFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
 		GlowFrame.Size = UDim2.new(0, 609, 0, 40)
@@ -1792,7 +1792,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		Glow.Name = "Glow"
 		Glow.Parent = GlowFrame
 		Glow.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		Glow.BackgroundTransparency = 0.20
+		Glow.BackgroundTransparency = 0.5
 		Glow.BorderSizePixel = 0
 		Glow.Position = UDim2.new(0, -15, 0, -15)
 		Glow.Size = UDim2.new(1, 30, 1, 30)
@@ -1805,7 +1805,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ServerContentFrame.Name = "ServerContentFrame"
 		ServerContentFrame.Parent = ServerFrame
 		ServerContentFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-		ServerContentFrame.BackgroundTransparency = 0.20
+		ServerContentFrame.BackgroundTransparency = 0.5
 		ServerContentFrame.BorderSizePixel = 0
 		ServerContentFrame.Position = UDim2.new(-0.0010054264, 0, 0.106338218, 0)
 		ServerContentFrame.Size = UDim2.new(0, 180, 0, 333)
@@ -1820,12 +1820,12 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelTitleFrame.BorderSizePixel = 0
 		ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
 		ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
-               ChannelTitleFrame.BackgroundTransparency = 0.20
+               ChannelTitleFrame.BackgroundTransparency = 0.5
 
 		Hashtag.Name = "Hashtag"
 		Hashtag.Parent = ChannelTitleFrame
 		Hashtag.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		Hashtag.BackgroundTransparency = 0.20
+		Hashtag.BackgroundTransparency = 0.5
 		Hashtag.BorderSizePixel = 0
 		Hashtag.Position = UDim2.new(0.0279720277, 0, 0, 0)
 		Hashtag.Size = UDim2.new(0, 19, 0, 39)
@@ -1837,7 +1837,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelTitle.Name = "ChannelTitle"
 		ChannelTitle.Parent = ChannelTitleFrame
 		ChannelTitle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		ChannelTitle.BackgroundTransparency = 0.20
+		ChannelTitle.BackgroundTransparency = 0.5
 		ChannelTitle.BorderSizePixel = 0
 		ChannelTitle.Position = UDim2.new(0.0862470865, 0, 0, 0)
 		ChannelTitle.Size = UDim2.new(0, 95, 0, 39)
@@ -1850,7 +1850,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ChannelContentFrame.Name = "ChannelContentFrame"
 		ChannelContentFrame.Parent = ServerFrame
 		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-           ChannelContentFrame.BackgroundTransparency = 0.20 --đây
+           ChannelContentFrame.BackgroundTransparency = 0.5 
 		ChannelContentFrame.BorderSizePixel = 0
 		ChannelContentFrame.ClipsDescendants = true
 		ChannelContentFrame.Position = UDim2.new(0.294561088, 0, 0.106338218, 0)
@@ -1859,7 +1859,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		GlowChannel.Name = "GlowChannel"
 		GlowChannel.Parent = ChannelContentFrame
 		GlowChannel.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		GlowChannel.BackgroundTransparency = 0.20
+		GlowChannel.BackgroundTransparency = 0.5
 		GlowChannel.BorderSizePixel = 0
 		GlowChannel.Position = UDim2.new(0, -33, 0, -91)
 		GlowChannel.Size = UDim2.new(1.06396091, 30, 0.228228226, 30)
@@ -1873,7 +1873,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 		ServerChannelHolder.Parent = ServerContentFrame
 		ServerChannelHolder.Active = true
 		ServerChannelHolder.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-		ServerChannelHolder.BackgroundTransparency = 0.20
+		ServerChannelHolder.BackgroundTransparency = 0.5
 		ServerChannelHolder.BorderSizePixel = 0
 		ServerChannelHolder.Position = UDim2.new(0.00535549596, 0, 0.0241984241, 0)
 		ServerChannelHolder.Selectable = false
