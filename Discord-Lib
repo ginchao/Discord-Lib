@@ -1742,7 +1742,7 @@ function DiscordLib:Window(text)
 
 
 local ImageLabel = Instance.new("ImageLabel")
-local gai = loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Discord-Lib/main/Anh"))() 
+local anh1 = {"rbxassetid://18273888587","rbxassetid://18273181434","rbxassetid://18275995451"}
 ImageLabel.Name = "MyImage"
 ImageLabel.Parent = ServerFrame
 ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
