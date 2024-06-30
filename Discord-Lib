@@ -14,7 +14,7 @@ local pfp
 local user
 local tag
 local userinfo = {}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Hoclomcongthuc/main/vohai"))()
+
 pcall(function()
 	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
 end)
@@ -1618,13 +1618,13 @@ function DiscordLib:Window(text)
 
 		AlrightBtn.Name = "AlrightBtn"
 		AlrightBtn.Parent = Notification
-		AlrightBtn.BackgroundColor3 = Color3.fromRGB(20,20, 20)
+		AlrightBtn.BackgroundColor3 = Color3.fromRGB(200,200, 200)
         
 		AlrightBtn.Position = UDim2.new(0.0332369953, 0, 0.789141417, 0)
 		AlrightBtn.Size = UDim2.new(0, 322, 0, 27)
 		AlrightBtn.Font = Enum.Font.Gotham
 		AlrightBtn.Text = btntext
-		AlrightBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+		AlrightBtn.TextColor3 = Color3.fromRGB(20, 20, 20)
 		AlrightBtn.TextSize = 13.000
 		AlrightBtn.AutoButtonColor = false
 		
@@ -1652,7 +1652,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(103,123,196)}
+				{BackgroundColor3 = Color3.fromRGB(0,0,10)}
 			):Play()
 		end)
 
@@ -1660,7 +1660,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
+				{BackgroundColor3 = Color3.fromRGB(200, 200, 200)}
 			):Play()
 		end)
 	end
@@ -1679,7 +1679,7 @@ function DiscordLib:Window(text)
 
 		Server.Name = text .. "Server"
 		Server.Parent = ServersHold
-		Server.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+		Server.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
 		Server.Position = UDim2.new(0.125, 0, 0, 0)
 		Server.Size = UDim2.new(0, 47, 0, 47)
 		Server.AutoButtonColor = false
@@ -1742,11 +1742,12 @@ function DiscordLib:Window(text)
 
 
 local ImageLabel = Instance.new("ImageLabel")
+local gai = {"rbxassetid://18273169225","rbxassetid://18273169225"}
 ImageLabel.Name = "MyImage"
 ImageLabel.Parent = ServerFrame
 ImageLabel.Size = UDim2.new(1, 0, 1, 0) -- Add
 ImageLabel.BackgroundTransparency = 1 
-ImageLabel.Image = "rbxassetid://6409799523" 
+ImageLabel.Image = gai[math.random(1,#gai)] 
 
 
                 ServerFrame1.Name = "ServerFrame1"
@@ -1766,7 +1767,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
                 ServerTitleFrame.Name = "ServerTitleFrame"
                 ServerTitleFrame.Parent = ServerFrame
                 ServerTitleFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-                ServerTitleFrame.BackgroundTransparency = 1 --đây
+                ServerTitleFrame.BackgroundTransparency = 50 --đây
                 ServerTitleFrame.BorderSizePixel = 0
                 ServerTitleFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
                 ServerTitleFrame.Size = UDim2.new(0, 180, 0, 40)
@@ -1774,7 +1775,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
                 ServerTitle.Name = "ServerTitle"
                 ServerTitle.Parent = ServerTitleFrame
                 ServerTitle.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-                ServerTitle.BackgroundTransparency = 2
+                ServerTitle.BackgroundTransparency = 50
                 ServerTitle.BorderSizePixel = 0
                 ServerTitle.Position = UDim2.new(0.0751359761, 0, 0, 0)
                 ServerTitle.Size = UDim2.new(0, 97, 0, 39)
@@ -1787,7 +1788,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
                 GlowFrame.Name = "GlowFrame"
                 GlowFrame.Parent = ServerFrame
                 GlowFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-                GlowFrame.BackgroundTransparency = 0.7
+                GlowFrame.BackgroundTransparency = 50
                 GlowFrame.BorderSizePixel = 0
                 GlowFrame.Position = UDim2.new(-0.0010054264, 0, -0.000900391256, 0)
                 GlowFrame.Size = UDim2.new(0, 609, 0, 40)
@@ -1823,7 +1824,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
                 ChannelTitleFrame.BorderSizePixel = 0
                 ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
                 ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
-               ChannelTitleFrame.BackgroundTransparency = 1
+               ChannelTitleFrame.BackgroundTransparency = 50
 
                 Hashtag.Name = "Hashtag"
                 Hashtag.Parent = ChannelTitleFrame
@@ -2354,7 +2355,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				SliderTitle.Size = UDim2.new(0, 200, 0, 27)
 				SliderTitle.Font = Enum.Font.Gotham
 				SliderTitle.Text = text
-				SliderTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				SliderTitle.TextSize = 14.000
 				SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2370,7 +2371,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				CurrentValueFrame.Name = "CurrentValueFrame"
 				CurrentValueFrame.Parent = SliderFrame
-				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
 				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
 
 				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
@@ -3090,27 +3091,27 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Textbox.Name = "Textbox"
 				Textbox.Parent = ChannelHolder
-				Textbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				Textbox.BackgroundTransparency = 1.000
+				Textbox.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+				Textbox.BackgroundTransparency = 0.1
 				Textbox.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Textbox.Size = UDim2.new(0, 403, 0, 73)
 
 				TextboxTitle.Name = "TextboxTitle"
 				TextboxTitle.Parent = Textbox
-				TextboxTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				TextboxTitle.BackgroundTransparency = 1.000
+				TextboxTitle.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+				TextboxTitle.BackgroundTransparency = 50
 				TextboxTitle.Position = UDim2.new(0, 5, 0, 0)
 				TextboxTitle.Size = UDim2.new(0, 200, 0, 29)
 				TextboxTitle.Font = Enum.Font.Gotham
 				TextboxTitle.Text = text
-				TextboxTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				TextboxTitle.TextColor3 = Color3.fromRGB(200, 200, 200)
 				TextboxTitle.TextSize = 14.000
 				TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 				TextboxFrameOutline.Name = "TextboxFrameOutline"
 				TextboxFrameOutline.Parent = TextboxTitle
 				TextboxFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
-				TextboxFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
+				TextboxFrameOutline.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
 				TextboxFrameOutline.Position = UDim2.new(0.988442957, 0, 1.6197437, 0)
 				TextboxFrameOutline.Size = UDim2.new(0, 396, 0, 36)
 
@@ -3120,7 +3121,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				TextboxFrame.Name = "TextboxFrame"
 				TextboxFrame.Parent = TextboxTitle
-				TextboxFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
+				TextboxFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+    TextboxFrame.BackgroundTransparency = 0.2
 				TextboxFrame.ClipsDescendants = true
 				TextboxFrame.Position = UDim2.new(0.00999999978, 0, 1.06638527, 0)
 				TextboxFrame.Selectable = true
@@ -3131,15 +3133,15 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				TextboxFrameCorner.Parent = TextboxFrame
 
 				TextBox.Parent = TextboxFrame
-				TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				TextBox.BackgroundTransparency = 1.000
+				TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+				TextBox.BackgroundTransparency = 0.2
 				TextBox.Position = UDim2.new(0.0178571437, 0, 0, 0)
 				TextBox.Size = UDim2.new(0, 377, 0, 32)
 				TextBox.Font = Enum.Font.Gotham
 				TextBox.PlaceholderColor3 = Color3.fromRGB(91, 95, 101)
 				TextBox.PlaceholderText = placetext
 				TextBox.Text = ""
-				TextBox.TextColor3 = Color3.fromRGB(193, 195, 197)
+				TextBox.TextColor3 = Color3.fromRGB(0, 0, 10)
 				TextBox.TextSize = 14.000
 				TextBox.TextXAlignment = Enum.TextXAlignment.Left
 				
@@ -3147,7 +3149,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					TweenService:Create(
 						TextboxFrameOutline,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
+						{BackgroundColor3 = Color3.fromRGB(200, 200, 200)}
 					):Play()
 				end)
 				
@@ -3155,7 +3157,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 					TweenService:Create(
 						TextboxFrameOutline,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(37, 40, 43)}
+						{BackgroundColor3 = Color3.fromRGB(200, 200, 200)}
 					):Play()
 					if ep then
 						if #TextBox.Text > 0 then
@@ -3176,7 +3178,8 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 				Label.Name = "Label"
 				Label.Parent = ChannelHolder
-				Label.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Label.BackgroundColor3 = Color3.fromRGB(0, 0, 10)
+    Label.BackgroundTransparency = 0.2
 				Label.BorderSizePixel = 0
 				Label.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Label.Size = UDim2.new(0, 401, 0, 30)
@@ -3194,7 +3197,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 				LabelTitle.Size = UDim2.new(0, 200, 0, 30)
 				LabelTitle.Font = Enum.Font.Gotham
 				LabelTitle.Text = text
-				LabelTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				LabelTitle.TextSize = 14.000
 				LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 				
