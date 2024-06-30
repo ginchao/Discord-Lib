@@ -127,7 +127,7 @@ function DiscordLib:Window(text)
 
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
-	TopFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+	TopFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TopFrame.BackgroundTransparency = 1.000
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -149,7 +149,7 @@ function DiscordLib:Window(text)
 	Title.Size = UDim2.new(0, 192, 0, 23)
 	Title.Font = Enum.Font.Gotham
 	Title.Text = text
-	Title.TextColor3 = Color3.fromRGB(99, 102, 109)
+	Title.TextColor3 = Color3.fromRGB(0, 0, 0)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1736,8 +1736,7 @@ function DiscordLib:Window(text)
 		ServerFrame.Position = UDim2.new(0.105726875, 0, 1.01262593, 0)
 		ServerFrame.Size = UDim2.new(0, 609, 0, 373)
 		ServerFrame.Visible = false
-                local Discord = Instance.new("ScreenGui")
-
+                
 
 local ImageLabel = Instance.new("ImageLabel")
 ImageLabel.Name = "MyImage"
@@ -1771,7 +1770,7 @@ ImageLabel.Image = "rbxassetid://6409799523"
 
 		ServerTitle.Name = "ServerTitle"
 		ServerTitle.Parent = ServerTitleFrame
-		ServerTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ServerTitle.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		ServerTitle.BackgroundTransparency = 0.10
 		ServerTitle.BorderSizePixel = 0
 		ServerTitle.Position = UDim2.new(0.0751359761, 0, 0, 0)
