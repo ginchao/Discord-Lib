@@ -3141,7 +3141,7 @@ ImageLabel.Image = gai
 				TextBox.PlaceholderColor3 = Color3.fromRGB(91, 95, 101)
 				TextBox.PlaceholderText = placetext
 				TextBox.Text = ""
-				TextBox.TextColor3 = Color3.fromRGB(0, 0, 10)
+				TextBox.TextColor3 = Color3.fromRGB(200, 200, 200)
 				TextBox.TextSize = 14.000
 				TextBox.TextXAlignment = Enum.TextXAlignment.Left
 				
@@ -3157,7 +3157,7 @@ ImageLabel.Image = gai
 					TweenService:Create(
 						TextboxFrameOutline,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(200, 200, 200)}
+						{BackgroundColor3 = Color3.fromRGB(10, 10, 10)}
 					):Play()
 					if ep then
 						if #TextBox.Text > 0 then
