@@ -149,7 +149,7 @@ function DiscordLib:Window(text)
 	Title.Position = UDim2.new(0.0102790017, 0, 0, 0)
 	Title.Size = UDim2.new(0, 192, 0, 23)
 	Title.Font = Enum.Font.Gotham
-	Title.Text = text.." | Cre: Anle991"
+	Title.Text = text.." | Ngừng Update Vô Thời Hạn"
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
