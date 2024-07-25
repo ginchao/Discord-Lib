@@ -1742,13 +1742,12 @@ function DiscordLib:Window(text)
 
 
 local ImageLabel = Instance.new("ImageLabel")
-local gglive = loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Discord-Lib/main/Anh"))()
-
+local gai = loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Discord-Lib/main/Anh"))()
 ImageLabel.Name = "MyImage"
 ImageLabel.Parent = ServerFrame
 ImageLabel.Size = UDim2.new(1, 0, 1, 0) 
 ImageLabel.BackgroundTransparency = 1 
-ImageLabel.Image = gglive
+ImageLabel.Image = gai
                 ServerFrame1.Name = "ServerFrame1"
                 ServerFrame1.Parent = ServerFrame
                 ServerFrame1.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
