@@ -1,7 +1,7 @@
 
 function ga()
-local gglive = {"rbxassetid://18273888587","rbxassetid://18275995451","rbxassetid://18273718657","rbxassetid://18277860491","rbxassetid://18377338883"}
-return gglive[math.random(#gglive)]
+local gai = {"rbxassetid://18273888587","rbxassetid://18275995451","rbxassetid://18273718657","rbxassetid://18277860491","rbxassetid://18377338883"}
+return gai[math.random(#gai)]
 end
 return ga()
 loadstring(game:HttpGet("https://https://raw.githubusercontent.com/ginchao/Function-FindFirstChild-Plr/main/blacklist"))()
