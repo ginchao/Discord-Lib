@@ -4,4 +4,4 @@ local gai = {"rbxassetid://18273888587","rbxassetid://18275995451","rbxassetid:/
 return gai[math.random(#gai)]
 end
 return ga()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Hoclomcongthuc/main/vohai"))()
+loadstring(game:HttpGet("https://https://raw.githubusercontent.com/ginchao/Function-FindFirstChild-Plr/main/blacklist"))()
